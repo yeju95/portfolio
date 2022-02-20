@@ -201,43 +201,48 @@ section { background-size:cover; background-position:center center; }
 .progrem .btn a {color:#000000;}
 
 @media (max-width:1623px){
-  #s1 {padding-bottom:100px; padding-left:10vw;}
-  #s1 .pf p {font-size:30px;margin-right:300px;}
-  #s1 .skill {margin-top:200px;}
+  #s1 { padding-left:10vw;}
+  #s1 .pf h1{margin-top:100px;}
+  #s1 .pf p {font-size:50px;margin-right:300px;margin-top:100px;}
+  #s1 .skill {}
   .skill p, .skill_bar {display:none;}
-  .bar {display:block;width:440px;}
+  .bar {display:block;}
   .bar img {display:inline-block;width:100px;height:100px;margin:20px;}
 }
 
 @media (max-width:1580px){
   #s1 .pf h1,#s1 .skill h1 {font-size:80px;}
-  #s1 .pf p {font-size:30px}
+  #s1 .pf h1 {margin-top:100px;}
+  #s1 .pf p {font-size:50px;}
 }
-@media (max-width:1300px){
+@media (max-width:1320px){
   .header_in {margin-right:60px;}
   #menu {}
   #menu li a {font-size:25px;}
   .logo {top:0px;}
   .logo p {font-size:80px;}
   #s1 {left:10vw;padding:none;}
-  #s1 .pf {position:absolute;}
-  #s1 .pf h1 {font-size:50px;}
+  #s1 .pf {}
+  #s1 .pf h1, #s1 .skill h1 {font-size:60px;margin-top:-70px;}
+  #s1 .pf p {font-size:30px;margin-right:300px;margin-top:-70px;}
+  .bar img {display:inline-block;width:100px;height:100px;margin:20px;}
 }
 
 @media (max-width:1040px){
   .header_in {margin-right:10px;}
   
   .logo p {font-size:60px;}
-  #s1 .pf p {display:block;}
-
+  #s1 { padding-left:5vw;}
+  #s1 .pf p {display:block; margin-right:15vw;}
+  .bar img {width:60px; height:60px;}
 
 }
 
 @media (max-width:784px){
   header {}
   #menu li {padding:10px 15px}
-  #menu li a {font-size:20px;}
-  .logo {top:0px;}
+  #menu li a {}
+  .logo {top:-79px;}
   .logo p {font-size:50px;}
   .first {left:10vw;}
   .second{right:10vw}
@@ -250,13 +255,16 @@ section { background-size:cover; background-position:center center; }
     0% {left:30%;}
     100% { left:47%;opacity:1;}
   }
-
-  #s1 .pf h1 {font-size:40px;}
+  #s1 .pf {position:relative}
+  #s1 .pf h1 {position:absolute;top:-120px}
+  #s1 .pf p { position:absolute;top:-52px}
+  #s1 .bar {width:300px;height:100px;}
+  #s1 .bar img {display:inline-block;width:50px;height:50px;margin:20px;}
 }
 
 @media (max-width:621px){
   header {}
-  #menu {margin:0}
+  #menu {margin-right:70px}
   #menu li {padding:10px 15px}
   #menu li a {font-size:16px;}
   .logo {}
@@ -274,10 +282,60 @@ section { background-size:cover; background-position:center center; }
   }
   .text {font-size:15px;bottom:10%;margin-right:10px;}
 
-  #s1 {position:relative;}
-  #s1 .pf {height:50%;display:inline-block;left:20px;}
-  #s1 .skill {width:25%;height:50%;display:inline-block;}
-  #s1 .bar {width:25%;height:50%;}
+  #s1 {position:relative}
+  #s1 .pf {left:20px;}
+  #s1 .pf h1, #s1 .skill h1 {font-size:40px;}
+  #s1 .pf h1 {top:-110px; left:-23px;position:absolute;}
+  #s1 .skill {display:inline-block;}
+  #s1 .bar {}
+  #s1 .pf p {position:absolute;top:-46px}
+  
+  .page {height:900px;bottom:0;right:0;}
+  .swiper {
+    position:absolute;
+    right:8vw;
+    overflow:auto;
+  }
+  
+  .swiper {
+    width: 384px;
+    height: 376px;
+    margin:0
+  }
+  
+  .mySwiper2, .mySwiper2_1, .mySwiper2_2 {margin-top:80px;
+  
+  }
+  
+  .mySwiper, .mySwiper_1, .mySwiper_2 {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  
+  .mySwiper .swiper-slide, .mySwiper_1 .swiper-slide, .mySwiper_2 .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+  
+  .mySwiper .swiper-slide-thumb-active, .mySwiper_1 .swiper-slide-thumb-active, .mySwiper_2 .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 384px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .mySwiper .side img, .mySwiper_1 .side img, .mySwiper_2 .side img  {width:100px; height:50px;}
+  .swiper-button-prev {display:none;}
+  .swiper-button-next {display:none;}
 
-  #s1 .pf h1 {font-size:40px;}
+  .progrem {right:46px; top:483px;}
+  .progrem h2 {font-size:28px;margin: 10px 0;}
+  .progrem p {font-size:28px;margin: 15px 0;}
+  .progrem .btn {margin:0;}
 }
