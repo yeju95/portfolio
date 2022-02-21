@@ -335,9 +335,10 @@ section { background-size:cover; background-position:center center; }
   .swiper-button-next {display:none;}
 
   .progrem {right:80px; top:483px;}
-  .korea {right:50px;}
+  .korea {right:30px;}
   .progrem h2 {font-size:28px;margin: 10px 0;}
   .progrem p {font-size:28px;margin: 15px 0;}
   .progrem .btn {margin:0;bottom:0;z-index:100000;}
   .progrem .btn a {padding:20px;}
+  .korea .btn a {padding:0}
 }
