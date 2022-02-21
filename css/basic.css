@@ -252,8 +252,8 @@ section { background-size:cover; background-position:center center; }
     100% {left:10%;}
   }
   @keyframes flow {
-    0% {left:30%;}
-    100% { left:47%;opacity:1;}
+    0% {left:10%;}
+    100% { left:25%;opacity:1;}
   }
   #s1 .pf {position:relative}
   #s1 .pf h1 {position:absolute;top:-120px}
@@ -280,7 +280,7 @@ section { background-size:cover; background-position:center center; }
     0% {left:30%;}
     100% { left:44%;opacity:1;}
   }
-  .text {font-size:15px;bottom:10%;margin-right:10px;}
+  .text {position:absolute;display:inline-block; margin:0;right:0; font-size:15px;bottom:20%;}
 
   #s1 {position:relative}
   #s1 .pf {left:20px;}
@@ -298,7 +298,7 @@ section { background-size:cover; background-position:center center; }
   }
   
   .swiper {
-    width: 384px;
+    width: 80vw;
     height: 376px;
     margin:0
   }
@@ -325,7 +325,7 @@ section { background-size:cover; background-position:center center; }
   
   .swiper-slide img {
     display: block;
-    width: 384px;
+    width: 80vw;
     height: 300px;
     object-fit: cover;
   }
@@ -337,5 +337,5 @@ section { background-size:cover; background-position:center center; }
   .progrem {right:46px; top:483px;}
   .progrem h2 {font-size:28px;margin: 10px 0;}
   .progrem p {font-size:28px;margin: 15px 0;}
-  .progrem .btn {margin:0;}
+  .progrem .btn {margin:0;bottom:0;}
 }
