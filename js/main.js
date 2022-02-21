@@ -61,3 +61,7 @@ var swiper2 = new Swiper(".mySwiper2_2", {
     swiper: swiper,
   },
 });
+
+function winOpen(){
+  window.open('https://yeju95.github.io/mobile_site/','popup','width=412, height=915,resizable=no ')
+}
