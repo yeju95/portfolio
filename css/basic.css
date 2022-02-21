@@ -334,7 +334,7 @@ section { background-size:cover; background-position:center center; }
   .swiper-button-prev {display:none;}
   .swiper-button-next {display:none;}
 
-  .progrem {right:80px; top:483px;}
+  .progrem {right:80px; top:483px;z-index:100000;}
   .korea {right:30px;}
   .progrem h2 {font-size:28px;margin: 10px 0;}
   .progrem p {font-size:28px;margin: 15px 0;}
