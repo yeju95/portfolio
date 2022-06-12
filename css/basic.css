@@ -60,7 +60,7 @@ header {}
 main {}
 section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat center/100% ; }
 
-.profile {padding-left: 15vw;}
+.profile {padding-left: 15vw; overflow:hidden}
 .profile p {font-family:'Gamja Flower';}
 .profile .pf {}
 .profile .pf h1 {position:relative; top:-100px; display:inline-block; font-size:100px; color:#f3f1e8;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}
@@ -308,6 +308,8 @@ section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat ce
 @media (max-width:1040px){
   #menu {margin-right:70px}
   #menu li a {font-size:16px;}
+  .profile .about {
+    width: 605px;}
   .logo p {font-size:60px;}
   .profile { padding-left:19vw;}
   .profile .pf p {padding-bottom:10px}
