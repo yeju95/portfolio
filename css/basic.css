@@ -58,7 +58,7 @@ header {}
 .indicator_top span:before {position:absolute;top:5px;left:50%;transform:translate(-50%) rotate(45deg);display:block; content:"";width:5px; height:5px; border:2px solid #fff;border-right:none;border-bottom:none;}
 
 main {}
-section { background:url('../img/pexels-aleksandar-pasaric-1694000.jpg')no-repeat center/100% ; }
+section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat center/100% ; }
 
 .profile {padding-left: 15vw;}
 .profile p {font-family:'Gamja Flower';}
@@ -528,11 +528,12 @@ section { background:url('../img/pexels-aleksandar-pasaric-1694000.jpg')no-repea
 }
 @media (max-width:532px){
   .progrem {left:-5vw}
-  .second{left:30vw;}
+  .first, .second {font-size:40px}
+  .second{left:44vw;top:187px}
   
   @keyframes flow {
     0% {left:13%;}
-    100% { left:30%;opacity:1;}
+    100% { left:44%;opacity:1;}
   }
   
   
