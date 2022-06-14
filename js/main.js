@@ -1,6 +1,6 @@
 var myFullpage = new fullpage('#fullpage', {
     menu: '#menu',
-    anchors: ['#section1', '#section2', '#section3', '#section4', '#section5' , '#section6'],
+    anchors: ['section1', 'section2', 'section3', 'section4', 'section5' , 'section6'],
     autoScrolling: true,  //스크롤 바를 스크롤 하면 한 페이지씩 넘어감(기본설정)
     scrollBar:true
 });
@@ -100,7 +100,7 @@ $('.indicator li a').on("click",function(e){
   var target=this.hash //#(해쉬) 값을 찾아서 변수에 넣는다
 
   //var sectionH = 선택자.offset().top  각 section의 위로부터의 거리
-  var sectionH = ($(target).offset().top)-158;
+  var sectionH = ($(target).offset().top)-20;
   //각section의 위로부터의 거리에서 고정 헤더길이(160px)만큼 빼줌
 
   $('html,body').animate({scrollTop:sectionH},500)
@@ -112,7 +112,7 @@ $('.m_indicator li a').on("click",function(e){
   e.preventDefault();       //a의 기본 기능을 못하게 한다.
   var target = this.hash    //  #(해쉬) 값을 찾아서 변수에 넣는다    
 
-  var sectionH =($(target).offset().top) - 85; 
+  var sectionH =($(target).offset().top) - 20; 
   //각section의 위로부터의 거리에서 고정 헤더길이(85px)만큼 빼줌
 
   $('html,body').animate({scrollTop:sectionH},500);   
