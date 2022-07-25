@@ -34,7 +34,7 @@ header {}
 /*******indicator*****/
 .m_indicator {display:none;}
 
-.indicator {position:fixed; top:360px;z-index:1000;right:10px;z-index:1000}
+.indicator {position:fixed; top:36%;z-index:1000;right:10px;z-index:1000}
 .indicator_inner {}
 
 .indicator ul {}
@@ -238,7 +238,7 @@ section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat ce
 
 @media (max-width:1751px){
   .swiper-button-next {left:45vw;}
-  .page {height:800px}
+  .page {height:608px}
 }
 @media (max-width:1630px){
   .profile { padding-left:10vw;}
