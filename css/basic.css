@@ -473,18 +473,18 @@ section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat ce
 
   .progrem {top:483px;z-index:100000;left:-5vw}
   .korea {right:0}
-  .progrem h2 {display:block;font-size:28px;margin: -19px 0 0;}
+  .progrem h2 {display:block;font-size:28px;margin: -5px 0 0;}
   .progrem p {display:block;font-size:28px;margin:0;}
   .progrem .btn {display:inline-block;
     position:relative;
    left:0;
    top:0; 
-   margin:-12px;
+   margin:7px;
    bottom:0;
    z-index:100000;}
   .progrem .btn a {padding:0;}
   .korea .btn a {padding:0}
-  .progrem .two {margin:-12px 0;}
+  .progrem .two {margin:7px 0;}
 }
 @media (max-width:621px){
   .logo p {font-size:40px;}
@@ -501,6 +501,7 @@ section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat ce
     100% { left:38%;opacity:1;}
   }
   
+  .profile {padding-left:10vw}
   .swiper {
     right:8vw;
     overflow:hidden;
@@ -559,22 +560,17 @@ section { background:url('../img/stars-night-textured-backdrop.jpg')no-repeat ce
 @media (max-width:532px){
   .progrem {left:3px;top:425px;}
   .first, .second {font-size:40px}
-  .second{left:39vw;top:187px}
+  .second{left:37vw;top:187px}
   
   @keyframes flow {
     0% {left:13%;}
     100% { left:44%;opacity:1;}
   }
   
-  
-  .swiper {
-    position:absolute;
-    right:8vw;
-  }
-  
   .swiper {
     top:-32px;
     width: 321px;
+    left:0;
   }
   
   .mySwiper .side img, .mySwiper_1 .side img, .mySwiper_2 .side img, .mySwiper_3 .side img  {width:100px; height:50px;}
