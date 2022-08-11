@@ -8,60 +8,151 @@
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/basic.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/prefixfree.jquery.js"></script>    
 </head>
 <body>
-    <header>
-        <div class="header_in">
-            <ul id="menu">
-                <li data-menuanchor="section1"><a href="#section1">HOME</a></li>
-                <li data-menuanchor="section2"><a href="#section2">About</a></li>
-                <li data-menuanchor="section3"><a href="#section3">portfolio</a></li>
-            </ul>
-        </div>
-    </header>
-        <main id="fullpage">
-            <section class="section" id="s0">
-                <div class="check"></div>
-                <div class="logo">
-                    <p>
-                        <span class="first">web design</span><br>
-                        <span class="second">web publisher.</span>
-                    </p>
-                </div>
-                <p class="text">안녕하세요~ 웹퍼블리셔가 되고 싶은 류연주 입니다~</p>
-            </section>
-        <section class="section" id="s1">
+  <header>
+    <div class="indicator">
+      <div class="indicator_inner">
+        <a href="#" class="indicator_prev"><span class="hidden">이전</span></a>
+        <ul id="menu">
+          <li class="on">
+              <a href="#section1">
+                <span class="indicatorNum">1</span>
+                <span class="indicatorTxt">메인</span>   
+              </a>
+          </li>
+          <li>
+              <a href="#section2">
+                <span class="indicatorNum">2</span>
+                <span class="indicatorTxt">프로필</span>   
+              </a>
+          </li>
+          <li>
+              <a href="#section3">
+                <span class="indicatorNum">3</span>
+                <span class="indicatorTxt">오로라</span>   
+              </a>
+          </li>
+          <li>
+              <a href="#section4">
+                <span class="indicatorNum">4</span>
+                <span class="indicatorTxt">대한민국 구석구석</span>   
+              </a>
+          </li>
+          <li>
+            <a href="#section5">
+              <span class="indicatorNum">5</span>
+              <span class="indicatorTxt">호텔</span>   
+            </a>
+          </li>
+          <li>
+            <a href="#section6">
+              <span class="indicatorNum">6</span>
+              <span class="indicatorTxt">GNT</span>   
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="indicator_next"><span class="hidden">다음</span></a>
+          <div class="indicator_top">
+              <a href=""><span>TOP</span></a>
+          </div>
+      </div>
+    </div>
+<!--모바일용 인디게이터(1024px 이하일떄 )-->
+    <div class="m_indicator stick">
+      <div class="m_indicator_inner">
+          <ul id="menu">
+              <li class="on">
+                <a href="#section1">
+                  <span class="indicatorNum">1</span>   
+                </a>
+              </li>
+              <li>
+                <a href="#section2">
+                  <span class="indicatorNum">2</span>  
+                </a>
+              </li>
+              <li>
+                <a href="#section3">
+                  <span class="indicatorNum">3</span> 
+                </a>
+              </li>
+              <li>
+                <a href="#section4">
+                  <span class="indicatorNum">4</span>  
+                </a>
+              </li>
+              <li>
+                <a href="#section5">
+                  <span class="indicatorNum">5</span>   
+                </a>
+              </li>
+              <li>
+                <a href="#section6">
+                  <span class="indicatorNum">6</span>  
+                </a>
+            </li>
+          </ul>
+          <a href="#" class="indicator_next"><span class="hidden">다음</span></a>
+          <div class="indicator_top">
+              <a href=""><span>TOP</span></a>
+          </div>
+      </div>
+    </div>
+  </header>
+
+    <main id="fullpage">
+        <section class="section" id="section1">
+            <div class="logo">
+              <span class="main_title">PORTFOLIO</span>
+              <span class="sub_title">web design web publisher.</span>
+              <span class="first">web design</span><br>
+              <span class="second">web publisher.</span>
+            </div>
+        </section>
+        <section class="section" id="section2">
+          <div class="profile">
             <div class="pf">
-                <h1>About me</h1>
-                <p> Name: 류연주<br>
-                    Call: 010-5238-8550<br>
-                    Birth: 95.03.18<br>
-                    E-mail: ryj8533@naver.com</p>
+              <h1>About me</h1>
+              <div class="about">
+                <p> Name: 류연주</p>
+                <p> Call: 010-5238-8550</p>
+                <p> Birth: 95.03.18</p>
+                <p> E-mail: ryj8533@naver.com</p>
+              </div>
             </div>  
             <div class="skill">
                 <h1>Skill</h1>
-                <p>
-                    <span class="black">HTML</span><br>
-                    <span>CSS</span><br>
-                    <span>Javascirpt/jQurey</span><br>
-                    <span>Photoshop/illustrator</span>
-                </p>
             </div>
             <div class="bar">
-                <p class="skill_bar bar1"></p>
-                <p class="skill_bar bar2"></p>
-                <p class="skill_bar bar3"></p>
-                <p class="skill_bar bar4"></p>
-                <img src="img/220px-HTML5_oval_logo.png" alt="html5">
-                <img src="img/120px-CSS3_logo_and_wordmark.svg.png" alt="css">
-                <img src="img/js.png" alt="js">
-                <img src="img/pngegg.png" alt="jquery">
-                <img src="img/photoshop.png" alt="">
-                <img src="img/Adobe_Illustrator_CC_icon.svg.png" alt="">
-            </div>    
+              <img src="img/220px-HTML5_oval_logo.png" alt="html5">
+              <img src="img/120px-CSS3_logo_and_wordmark.svg.png" alt="css">
+              <img src="img/js.png" alt="js">
+              <img src="img/pngegg.png" alt="jquery">
+              <img src="img/photoshop.png" alt="">
+              <img src="img/Adobe_Illustrator_CC_icon.svg.png" alt="">
+            </div> 
+            <div class="graph">
+              <div class="title">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascirpt</p>
+                <p>jQurey</p>
+                <p>Photoshop</p>
+                <p>illustrator</p>
+              </div>
+                <div class="donut circle1" data-percent="95"></div>
+                <div class="donut circle2" data-percent="90"></div>
+                <div class="donut circle3" data-percent="85"></div>
+                <div class="donut circle4" data-percent="85"></div>
+                <div class="donut circle5" data-percent="80"></div>
+                <div class="donut circle6" data-percent="80"></div>   
+            </div> 
+          </div> 
         </section>
-        <section class="section" id="s2">
+        <section class="section" id="section3">
             <div class="page">                
                 <div style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff" class="swiper mySwiper2" >
                     <div class="swiper-wrapper">
@@ -81,37 +172,42 @@
                 <div thumbsSlider="" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide side">
-                        <img src="img/site1_2.png" />
+                          <img src="img/site1_2.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="img/site1.png" />
+                          <img src="img/site1.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="img/site1_1.png" />
+                          <img src="img/site1_1.png" />
                         </div>
                     </div>
                 </div>
 
                 <div class="progrem">
+                  <div class="ani">
                     <h2>Bootstrap Site</h2>
                     <p> html5 / css / jQuery</p>
-                    <p>HTML,CSS,JS를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
+                    <p>Bootstrap를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
                     <p class="btn"><a href="https://yeju95.github.io/rwd/" target='_blank'>반응형 사이트</a></p>
+                  </div>
                 </div>
             </div>
         </section>
-        <section class="section" id="s3">
+        <section class="section" id="section4">
             <div class="page">
                 <div style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff" class="swiper mySwiper2_1" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide ">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <img src="img/site2_2.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img src="img/site2_3.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img src="img/site2.png" />
+                        </div>
+                        <div class="swiper-slide side">
+                            <img src="img/site2_1.png" />
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -120,37 +216,42 @@
                 <div thumbsSlider="" class="swiper mySwiper_1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <img src="img/site2_2.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img src="img/site2_3.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img src="img/site2.png" />
+                        </div>
+                        <div class="swiper-slide side">
+                            <img src="img/site2_1.png" />
                         </div>
                     </div>
                 </div>
-                <div class="progrem">
-                    <h2>Bootstrap Site</h2>
-                    <p> html5 / css / jQuery</p>
-                    <p>HTML,CSS,JS를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
-                    <p class="btn"><a href="">반응형 사이트</a></p>
-                    <p class="btn"><a href="">모바일 사이트</a></p>
+                <div class="progrem korea">
+                  <div class="ani">
+                      <h2>대한민국 구석구석</h2>
+                      <p> html5 / css / jQuery</p>
+                      <p>HTML,CSS,JS를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
+                      <p class="btn two"><a href="https://yeju95.github.io/pc_mobile_site/" target='_blank'>PC 사이트</a></p>
+                      <p class="btn two"><a href="javascript:winOpen()">모바일 사이트</a></p>
+                  </div>    
                 </div>
             </div>
         </section>
-        <section class="section" id="s4">
+        <section class="section" id="section5">
             <div class="page">
                 <div style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff" class="swiper mySwiper2_2" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            <img src="img/site3.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            <img src="img/site3_1.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            <img src="img/site3_2.png" />
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -159,29 +260,69 @@
                 <div thumbsSlider="" class="swiper mySwiper_2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                        <img src="img/site3.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                        <img src="img/site3_1.png" />
                         </div>
                         <div class="swiper-slide side">
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        <img src="img/site3_2.png" />
                         </div>
                     </div>
                 </div>
                 <div class="progrem">
-                    <h2>Bootstrap Site</h2>
+                  <div class="ani">
+                    <h2>반응형 사이트</h2>
                     <p> html5 / css / jQuery</p>
                     <p>HTML,CSS,JS를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
-                    <p class="btn"><a href="">반응형 사이트</a></p>
-                    <p class="btn"><a href="">모바일 사이트</a></p>
+                    <p class="btn"><a href="https://yeju95.github.io/hotel/" target='_blank'>반응형 사이트</a></p>
+                  </div>  
                 </div>
             </div>
-        </section>        
+        </section>    
+        <section class="section" id="section6">
+          <div class="page">
+              <div style="--swiper-navigation-color: #fff;--swiper-pagination-color: #fff" class="swiper mySwiper2_3" >
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="img/site4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="img/site4_1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="img/site4_2.png" />
+                      </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper_3">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide side">
+                      <img src="img/site4.png" />
+                      </div>
+                      <div class="swiper-slide side">
+                      <img src="img/site4_1.png" />
+                      </div>
+                      <div class="swiper-slide side">
+                      <img src="img/site4_2.png" />
+                      </div>
+                  </div>
+              </div>
+              <div class="progrem">
+                <div class="ani">
+                  <h2>반응형 사이트</h2>
+                  <p> html5 / css / jQuery</p>
+                  <p>HTML,CSS,JS를 이용하여<br> 리뉴얼한 웹페이지 입니다.</p>
+                  <p class="btn"><a href="https://yeju95.github.io/test1/" target='_blank'>반응형 사이트</a></p>
+                </div>  
+              </div>
+          </div>
+      </section>    
     </main>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/fullpage.js"></script>
-    
     <script src="js/main.js"></script>
 </body>
 </html>
